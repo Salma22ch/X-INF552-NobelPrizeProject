@@ -1,0 +1,12 @@
+
+==> from begining cretae map => display nodes
+==> vegalite filter => highlit a catgory => on hover
+==> Titles
+==> chart for universities same as countries
+==> couleurs => scale
+==> nbv pb => filter ctx.winner by properties.name => get nb_wining; but the pb ctx.winning qd appelé makechart => cumulate data
+==> organise the code / ==> // liste des winners
+
+
+
+

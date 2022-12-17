@@ -1,0 +1,109 @@
+.header{
+  text-align:center;
+}
+#main{
+  display:flex;
+  margin-left: 5%;
+  flex-direction: row;
+  /* text-align:center; */
+}
+
+#righCol{
+  display: flex;
+  flex-direction: column;
+  float: right;
+}
+
+#leftCol{
+  display: flex;
+  flex-direction: column;
+  float: left;
+}
+
+#ChartGrid{
+  display: flex;
+  flex-direction: column;
+  float: left;
+}
+
+
+#map{
+  float:right;
+}
+
+
+#Controllers{
+  border: 1px solid #999;
+  display: flex;
+  flex-direction: row;
+}
+
+#Controllers div{
+  margin: 3%;
+}
+
+#info{
+  border: 1px solid #999;
+  width: 600px;
+  height: 230px;
+  padding: 1px;
+  display: flex;
+  flex-direction: row;
+}
+
+#info img{
+  height: 70%;
+  padding-top: 5%;
+  padding-left: 1%;
+}
+
+#info div{
+  padding-top: 5%;
+  padding-left: 1%;
+}
+
+svg {
+  display: block;
+  /* margin-left: 5%; */
+  border: 1px solid #999;
+}
+
+svg#slider-time{
+  display: block;
+  /* margin-left: 5%; */
+  border: 1px solid rgb(255, 255, 255);
+}
+
+#vegalineChart{
+  border: 1px solid #999;
+}
+
+#vegabarChart{
+  border: 1px solid #999;
+  margin-top: 1%;
+  /* margin-left: 20%; */
+  /* margin-right: 20%; */
+}
+
+
+.country {
+  fill: rgb(180, 186, 209);
+  stroke: rgb(174, 174, 174);
+}
+
+.legendTitle {
+  font-size: 15px;
+  fill: #4f4f4f;
+  font-weight: 12;
+}
+
+
+
+.axis text {
+  font-family: Consolas, courier;
+  fill: #000;
+  font-size: 9pt;
+}
+
+
+

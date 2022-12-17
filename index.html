@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <title>Nobel Prize Project</title>
+    <!-- vega-lite -->
+    <script src="https://cdn.jsdelivr.net/npm/vega@5.22.1"></script>
+    <script src="https://cdn.jsdelivr.net/npm/vega-lite@5.5.0"></script>
+    <script src="https://cdn.jsdelivr.net/npm/vega-embed@6.21.0"></script>
+    <!-- https://d3js.org/ -->
+    <script type="text/javascript" src="js/d3.v7.min.js"></script>
+    <script type="text/javascript" src="js/d3-geo-projection.v4.min.js"></script>
+    <script src="https://unpkg.com/d3-simple-slider"></script>
+    <script type="text/html" src="multiselect-dropdown.js"></script>
+    <!-- Your code -->
+    <script type="text/javascript" src="js/script.js"></script>
+    <link rel="stylesheet" href="styles.css">
+
+</head>
+
+<body onload="createViz()">
+    <div class="header">
+        <h3>Nobel Prize Project</h3>
+    </div>
+    <div id="main">
+        <div id="righCol">
+            <div id="info">
+                <img src="./media/nobel_prize.jpg" alt="icon" id="profile">
+                <div id="infonobel" style="visibility: visible;">
+                    Nobel Prize is a prestigious prize awarded separately in the fields of Physics, Chemistry,
+                    Physiology or Medicine, Literature, Peace, and Economics, to those who, during
+                    the preceding year, have conferred the greatest benefit to humankind.
+                    It was established in 1895 by Swedish inventor Alfred Nobel and first awarded in 1901. 
+
+                </div>
+                <div id="infowinner" style="visibility: hidden;">
+                    <b>Full name: </b><label id="name"> salma chana</label>
+                    <br>
+                    <b>Category: </b><label id="catg"></label>
+                    <br>
+                    <b>Age: </b><label id="age"></label>
+                    <br>
+                    <b>University: </b><label id="univ"></label>
+                    <br>
+                    <b>Country: </b><label id="count"></label>
+                    <br>
+                    <b>Birth Country: </b><label id="birthcount"></label>
+                    <br>
+                    <b>Year: </b><label id="year"></label>
+                </div>
+
+            </div>
+            <div id="map">
+            </div>
+            <div id="vegabarChart">
+            </div>
+
+
+
+        </div>
+
+        <div id="leftCol">
+            <div id="Controllers">
+                <svg id="slider-time"></svg>
+                <div id="category-options">
+                    <label for="category-select"><b>Category:</b></label>
+                    <br>
+                    <input type="checkbox" id="Chemistry" checked="true"> Chemistry
+                    <br>
+                    <input type="checkbox" id="Literature" checked="true"> Literature
+                    <br>
+                    <input type="checkbox" id="Medicine" checked="true"> Medicine
+                    <br>
+                    <input type="checkbox" id="Peace" checked="true"> Peace
+                    <br>
+                    <input type="checkbox" id="Physics" checked="true"> Physics
+                    <br>
+                    <input type="checkbox" id="Economics" checked="true"> Economics
+                </div>
+
+                <div id="sex-options">
+                    <label for="sex-select"><b>Sex:</b></label>
+                    <br>
+                    <input type="checkbox" id="Male" checked="true"> Male
+                    <br>
+                    <input type="checkbox" id="Female" checked="true"> Female
+                </div>
+
+                <div id="type-options">
+                    <label for="type-select"><b>Laureate Type:</b></label>
+                    <br>
+                    <input type="checkbox" id="Individual" checked="true"> Individual
+                    <br>
+                    <input type="checkbox" id="Organization" checked="true"> Organization
+                </div>
+               
+            </div>
+            <div id="ChartGrid">
+            </div>
+            <div id="vegalineChart"> 
+    
+            </div>
+        </div>
+
+    </div>
+
+  
+
+
+</body>
+
+</html>

@@ -1,0 +1,7 @@
+{
+    "homepage": "https://salma22ch.github.io/X-INF552-NobelPrizeProject",
+    "scripts": {
+        "predeploy": "npm run build",
+        "deploy": "gh-pages -d build"
+      }
+}
